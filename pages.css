@@ -944,3 +944,8 @@
     color: #ffa726; /* mantém alerta, sem agressividade */
     text-transform: none;
 }
+/* Alertas – texto forte sem agressividade */
+.alert-box strong {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
