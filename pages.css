@@ -211,7 +211,7 @@
 
 .warning-text {
     color: #ffa726 !important;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 /* === INFRACTION BADGES === */
