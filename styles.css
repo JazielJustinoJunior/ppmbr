@@ -344,7 +344,8 @@ body {
 }
 
 .section-title {
-    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-family: 'Rajdhani', 'Arial', sans-serif;
+    font-weight: 600;
     font-size: clamp(2rem, 5vw, 3rem);
     letter-spacing: 0.15em;
     color: var(--text-primary);
@@ -445,7 +446,8 @@ body {
 }
 
 .card-title {
-    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-family: 'Rajdhani', 'Arial', sans-serif;
+    font-weight: 500;
     font-size: 1.4rem;
     letter-spacing: 0.1em;
     margin-bottom: 15px;
