@@ -949,3 +949,30 @@
     font-weight: 500;
     letter-spacing: 0.02em;
 }
+/* ===============================
+   DOAÇÃO – AJUSTE FINO DE PESO
+   =============================== */
+/* CHAVE PIX */
+.pix-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+}
+/* Destino dos Recursos / Regras para Doadores */
+.info-card h3 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+}
+/* APOIE O SERVIDOR */
+.cta-content h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600; /* um pouco mais forte, mas elegante */
+    letter-spacing: 0.08em;
+}
+/* MEU MUITO OBRIGADO */
+.thank-you-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+}
