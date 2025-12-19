@@ -976,3 +976,13 @@
     font-weight: 500;
     letter-spacing: 0.06em;
 }
+/* ===============================
+   REGRAS – AJUSTE FINO DE TÍTULOS
+   =============================== */
+/* Títulos das regras individuais */
+.rule-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: none; /* remove o grito */
+}
