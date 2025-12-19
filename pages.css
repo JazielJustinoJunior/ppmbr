@@ -1,0 +1,897 @@
+/* ============================================
+   PPMBR - PAGES STYLESHEET
+   Estilos para Regras, Doação e Suporte
+   ============================================ */
+
+/* === TACTICAL NAVIGATION === */
+.tactical-nav {
+    background: linear-gradient(90deg, #0a0b10 0%, #12141d 50%, #0a0b10 100%);
+    border-bottom: 1px solid var(--red-alert);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.tactical-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 1.5rem;
+    color: var(--red-alert);
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+}
+
+.nav-logo:hover {
+    text-shadow: 0 0 10px var(--accent-glow);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    letter-spacing: 0.15em;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--text-primary);
+}
+
+.nav-link.active {
+    color: var(--red-alert);
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--red-alert);
+}
+
+/* === PAGE HERO === */
+.page-hero {
+    position: relative;
+    height: 40vh;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #0a0b10 0%, #1a1d2e 100%);
+}
+
+.page-header-content {
+    position: relative;
+    z-index: 4;
+    text-align: center;
+}
+
+.page-tag {
+    display: inline-block;
+    color: var(--green-terminal);
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 15px;
+    padding: 5px 15px;
+    border: 1px solid var(--green-terminal);
+    clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+}
+
+.page-title {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    color: var(--red-alert);
+    letter-spacing: 0.15em;
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px var(--accent-glow);
+}
+
+.page-subtitle {
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    color: var(--text-secondary);
+    letter-spacing: 0.1em;
+}
+
+/* === CONTENT SECTION === */
+.content-section {
+    padding: 80px 0;
+    background: var(--bg-dark);
+}
+
+/* === RULES BLOCK === */
+.rules-block {
+    margin-bottom: 60px;
+    background: var(--bg-card);
+    border: 1px solid var(--grid-line);
+    padding: 40px;
+    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+}
+
+.rules-block.highlight-block {
+    border: 1px solid var(--red-alert);
+    background: linear-gradient(135deg, rgba(207, 46, 46, 0.05) 0%, rgba(18, 20, 29, 0.9) 100%);
+}
+
+.block-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--grid-line);
+}
+
+.block-icon {
+    font-size: 2rem;
+}
+
+.block-title {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.1em;
+    color: var(--text-primary);
+}
+
+/* === RULE ITEMS === */
+.rule-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+    padding: 20px;
+    background: rgba(10, 11, 16, 0.5);
+    border-left: 3px solid var(--red-alert);
+    transition: all 0.3s ease;
+}
+
+.rule-item:hover {
+    background: rgba(10, 11, 16, 0.8);
+    transform: translateX(5px);
+}
+
+.rule-number {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--red-alert);
+    color: #fff;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 1.5rem;
+    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+}
+
+.rule-content {
+    flex: 1;
+}
+
+.rule-title {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
+}
+
+.rule-text {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.rule-details {
+    margin-top: 15px;
+    padding-left: 15px;
+    border-left: 2px solid var(--grid-line);
+}
+
+.rule-details p {
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.warning-text {
+    color: #ffa726 !important;
+    font-weight: bold;
+}
+
+/* === INFRACTION BADGES === */
+.infraction-badge {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-top: 10px;
+    clip-path: polygon(5px 0, 100% 0, calc(100% - 5px) 100%, 0 100%);
+}
+
+.infraction-badge.light {
+    background: #2196f3;
+    color: #fff;
+}
+
+.infraction-badge.medium {
+    background: #ffa726;
+    color: #000;
+}
+
+.infraction-badge.severe {
+    background: var(--red-alert);
+    color: #fff;
+}
+
+.infraction-badge.analysis {
+    background: #9c27b0;
+    color: #fff;
+}
+
+.inline-badge {
+    padding: 2px 8px;
+    font-size: 0.7rem;
+    margin-left: 5px;
+}
+
+/* === INFRACTION GRID === */
+.infraction-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.infraction-card {
+    padding: 25px;
+    text-align: center;
+    clip-path: polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px);
+}
+
+.infraction-card h3 {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
+}
+
+.infraction-card p {
+    font-size: 0.95rem;
+}
+
+.light-card {
+    background: rgba(33, 150, 243, 0.2);
+    border: 1px solid #2196f3;
+    color: #64b5f6;
+}
+
+.medium-card {
+    background: rgba(255, 167, 38, 0.2);
+    border: 1px solid #ffa726;
+    color: #ffb74d;
+}
+
+.severe-card {
+    background: rgba(207, 46, 46, 0.2);
+    border: 1px solid var(--red-alert);
+    color: #ef5350;
+}
+
+.infraction-note {
+    color: #ffa726;
+    font-size: 0.95rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* === REPORT METHODS === */
+.report-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.report-card {
+    background: rgba(10, 11, 16, 0.5);
+    padding: 25px;
+    border-left: 3px solid var(--green-terminal);
+}
+
+.report-number {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: var(--green-terminal);
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    line-height: 35px;
+    margin-bottom: 15px;
+    clip-path: polygon(5px 0, 100% 0, calc(100% - 5px) 100%, 0 100%);
+}
+
+.command-box {
+    background: #000;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid var(--green-terminal);
+    font-family: 'Courier New', monospace;
+    position: relative;
+}
+
+.command-box code {
+    color: var(--green-terminal);
+    font-size: 1rem;
+}
+
+.command-label {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.example-text {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* === ALERT BOX === */
+.alert-box {
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 4px solid var(--red-alert);
+    background: rgba(207, 46, 46, 0.1);
+    color: var(--text-primary);
+}
+
+.alert-box.warning {
+    border-left-color: #ffa726;
+    background: rgba(255, 167, 38, 0.1);
+}
+
+.alert-box.info {
+    border-left-color: #2196f3;
+    background: rgba(33, 150, 243, 0.1);
+}
+
+.alert-box.duration {
+    border-left-color: var(--green-terminal);
+    background: rgba(76, 175, 80, 0.1);
+}
+
+/* === GM RULES === */
+.gm-rules {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* === DONATION HIGHLIGHT === */
+.donation-highlight {
+    background: linear-gradient(135deg, rgba(207, 46, 46, 0.1) 0%, rgba(18, 20, 29, 0.9) 100%);
+    border: 2px solid var(--red-alert);
+    padding: 60px 40px;
+    text-align: center;
+    margin-bottom: 60px;
+    clip-path: polygon(30px 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 30px);
+}
+
+.pix-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.pix-icon {
+    color: var(--red-alert);
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 10px var(--accent-glow));
+}
+
+.pix-title {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    letter-spacing: 0.15em;
+    margin-bottom: 30px;
+}
+
+.pix-key {
+    background: #000;
+    border: 2px solid var(--green-terminal);
+    padding: 25px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.key-text {
+    font-family: 'Courier New', monospace;
+    font-size: 1.3rem;
+    color: var(--green-terminal);
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.copy-btn {
+    background: var(--green-terminal);
+    color: #000;
+    border: none;
+    padding: 12px 25px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
+    transition: all 0.3s ease;
+}
+
+.copy-btn:hover {
+    background: #fff;
+    transform: translateY(-2px);
+}
+
+.copy-feedback {
+    color: var(--green-terminal);
+    font-weight: bold;
+    margin-top: 15px;
+    display: none;
+    animation: fadeInOut 2s ease;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+/* === DONATION STEPS === */
+.donation-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.step-card {
+    background: rgba(10, 11, 16, 0.5);
+    padding: 25px;
+    border: 1px solid var(--grid-line);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.step-card:hover {
+    border-color: var(--red-alert);
+    transform: translateY(-5px);
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: var(--red-alert);
+    color: #fff;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+}
+
+.step-content h3 {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.step-content p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* === DONATION INFO === */
+.donation-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    background: rgba(10, 11, 16, 0.5);
+    padding: 25px;
+    border-left: 3px solid var(--green-terminal);
+}
+
+.info-card h3 {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* === BENEFITS GRID === */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.benefit-card {
+    background: rgba(10, 11, 16, 0.5);
+    padding: 30px;
+    text-align: center;
+    border: 1px solid var(--grid-line);
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+    border-color: var(--green-terminal);
+    transform: translateY(-5px);
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.benefit-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* === CTA SECTION === */
+.cta-section {
+    background: rgba(207, 46, 46, 0.05);
+    border: 1px solid var(--red-alert);
+    padding: 40px;
+    margin-bottom: 40px;
+    clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
+}
+
+.cta-content h2 {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 2rem;
+    color: var(--red-alert);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cta-content p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quote-box {
+    background: rgba(0, 0, 0, 0.5);
+    border-left: 4px solid var(--green-terminal);
+    padding: 20px 30px;
+    font-style: italic;
+    color: var(--text-primary);
+    margin-top: 20px;
+}
+
+/* === THANK YOU === */
+.thank-you-section {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.1) 0%, rgba(18, 20, 29, 0.5) 100%);
+    border: 2px solid var(--green-terminal);
+    clip-path: polygon(30px 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 30px);
+}
+
+.thank-you-title {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: var(--green-terminal);
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+/* === SUPPORT HIGHLIGHT === */
+.support-highlight {
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.1) 0%, rgba(18, 20, 29, 0.9) 100%);
+    border: 2px solid #2196f3;
+    padding: 60px 40px;
+    text-align: center;
+    margin-bottom: 60px;
+    clip-path: polygon(30px 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 30px);
+}
+
+.discord-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.discord-icon {
+    color: #5865F2;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 10px rgba(88, 101, 242, 0.5));
+}
+
+.discord-title {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    letter-spacing: 0.15em;
+    margin-bottom: 20px;
+}
+
+.discord-description {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* === SUPPORT GRID === */
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.support-card {
+    background: rgba(10, 11, 16, 0.5);
+    border: 1px solid var(--grid-line);
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.support-card:hover {
+    border-color: #2196f3;
+    transform: translateY(-5px);
+}
+
+.support-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.support-card h3 {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.support-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.support-list {
+    list-style: none;
+    padding: 0;
+}
+
+.support-list li {
+    color: var(--text-secondary);
+    padding: 8px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.support-list li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    color: #2196f3;
+    font-size: 0.8rem;
+}
+
+.command-note {
+    font-size: 0.85rem;
+    color: #ffa726;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+/* === FAQ === */
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-item {
+    background: rgba(10, 11, 16, 0.5);
+    border: 1px solid var(--grid-line);
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: var(--green-terminal);
+}
+
+.faq-question {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.faq-answer {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.faq-icon {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--red-alert);
+    color: #fff;
+    font-weight: bold;
+    clip-path: polygon(5px 0, 100% 0, calc(100% - 5px) 100%, 0 100%);
+}
+
+.faq-question h3 {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.faq-answer p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.faq-answer code {
+    color: var(--green-terminal);
+    background: #000;
+    padding: 2px 8px;
+    border: 1px solid var(--green-terminal);
+}
+
+/* === QUICK LINKS === */
+.quick-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.quick-link-card {
+    background: rgba(10, 11, 16, 0.5);
+    border: 1px solid var(--grid-line);
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.quick-link-card:hover {
+    border-color: var(--red-alert);
+    transform: translateY(-5px);
+}
+
+.link-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.quick-link-card h3 {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.quick-link-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* === CONTACT SECTION === */
+.contact-section {
+    margin-top: 60px;
+}
+
+.contact-section h2 {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 2rem;
+    color: var(--red-alert);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .tactical-nav .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .rules-block {
+        padding: 25px 20px;
+    }
+
+    .rule-item {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .rule-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .pix-key {
+        flex-direction: column;
+    }
+
+    .key-text {
+        font-size: 1rem;
+    }
+
+    .support-grid,
+    .benefits-grid,
+    .donation-steps,
+    .infraction-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-question,
+    .faq-answer {
+        gap: 10px;
+    }
+}

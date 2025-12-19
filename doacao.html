@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOAÇÃO | PPMBR</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+    <!-- Header Navigation -->
+    <nav class="tactical-nav">
+        <div class="container">
+            <a href="index.html" class="nav-logo">← PPMBR</a>
+            <div class="nav-links">
+                <a href="regras.html" class="nav-link">REGRAS</a>
+                <a href="doacao.html" class="nav-link active">DOAÇÃO</a>
+                <a href="suporte.html" class="nav-link">SUPORTE</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-grid"></div>
+        <div class="container">
+            <div class="page-header-content">
+                <span class="page-tag">[APOIE O SERVIDOR]</span>
+                <h1 class="page-title">DOAÇÃO</h1>
+                <p class="page-subtitle">AJUDE A MANTER O SERVIDOR ONLINE</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Content -->
+    <section class="content-section">
+        <div class="container">
+
+            <!-- PIX Section -->
+            <div class="donation-highlight">
+                <div class="pix-container">
+                    <div class="pix-icon">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="9" y1="9" x2="15" y2="15"/>
+                            <line x1="15" y1="9" x2="9" y2="15"/>
+                        </svg>
+                    </div>
+                    <h2 class="pix-title">CHAVE PIX</h2>
+                    <div class="pix-key" id="pixKey">
+                        <span class="key-text">JAZIELRACING@GMAIL.COM</span>
+                        <button class="copy-btn" onclick="copyPix()">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                            </svg>
+                            COPIAR
+                        </button>
+                    </div>
+                    <p class="copy-feedback" id="copyFeedback">✓ Chave copiada!</p>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="rules-block">
+                <div class="block-header">
+                    <span class="block-icon">📢</span>
+                    <h2 class="block-title">COMO DOAR</h2>
+                </div>
+                <div class="donation-steps">
+                    <div class="step-card">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Faça a Doação</h3>
+                            <p>Use a chave PIX acima para realizar sua doação via transferência PIX.</p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Abra um Ticket</h3>
+                            <p>Após a doação, abra um ticket no Discord e envie o comprovante.</p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>Receba seu Cargo</h3>
+                            <p>O cargo de <strong>DOADOR</strong> será atribuído após verificação do comprovante.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert-box warning">
+                    <strong>⚠️ IMPORTANTE:</strong> O comprovante deve permitir a <strong>identificação clara do doador</strong>, para que o cargo de DOADOR possa ser atribuído corretamente.
+                </div>
+
+                <div class="alert-box info">
+                    <strong>🔔 ATENÇÃO:</strong> Não é obrigatório doar para jogar no servidor!
+                </div>
+            </div>
+
+            <!-- Sobre as Doações -->
+            <div class="rules-block">
+                <div class="block-header">
+                    <span class="block-icon">💰</span>
+                    <h2 class="block-title">SOBRE AS DOAÇÕES</h2>
+                </div>
+
+                <div class="donation-info">
+                    <div class="info-card">
+                        <h3>Destino dos Recursos</h3>
+                        <p>A <strong>doação</strong> realizada é integralmente destinada ao custeio do servidor, sendo utilizada exclusivamente para esse fim.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Regras para Doadores</h3>
+                        <p>💬 Os doadores contribuem de forma voluntária para manter o servidor ativo; contudo, essa contribuição <strong>não concede poder de decisão</strong> sobre quaisquer assuntos técnicos relacionados ao servidor.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefícios -->
+            <div class="rules-block highlight-block">
+                <div class="block-header">
+                    <span class="block-icon">🎁</span>
+                    <h2 class="block-title">BENEFÍCIOS DO DOADOR</h2>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">📊</div>
+                        <h3>Meu Killfeed</h3>
+                        <p>Acesso ao canal de estatísticas pessoais de kills/deaths</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🗳️</div>
+                        <h3>Votação</h3>
+                        <p>Participe das votações sobre eventos e melhorias do servidor</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">👑</div>
+                        <h3>Cargo Exclusivo</h3>
+                        <p>Cargo de DOADOR no Discord com destaque visual</p>
+                    </div>
+                </div>
+
+                <div class="alert-box duration">
+                    <strong>📌 DURAÇÃO:</strong> O cargo no Discord de DOADOR tem duração de <strong>30 dias corridos</strong> a partir do momento da ativação!
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h2>⚠️ APOIE O SERVIDOR</h2>
+                    <p>Vale lembrar que dependemos das doações para manter o servidor em funcionamento. Por favor, apoie-nos para que possamos continuar ativos e garantir a diversão de todos.</p>
+                    <blockquote class="quote-box">
+                        Nosso objetivo continua sendo o mesmo: manter um ambiente justo e sustentável para todos. Agradecemos o apoio contínuo da comunidade!
+                    </blockquote>
+                </div>
+            </div>
+
+            <!-- Thank You -->
+            <div class="thank-you-section">
+                <h2 class="thank-you-title">✌️ MEU MUITO OBRIGADO A TODOS ✌️</h2>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="comms">
+        <div class="container">
+            <div class="comms-grid">
+                <div class="comms-links">
+                    <a href="regras.html" class="comms-link">[REGRAS]</a>
+                    <a href="doacao.html" class="comms-link">[DOAÇÃO]</a>
+                    <a href="suporte.html" class="comms-link">[SUPORTE]</a>
+                </div>
+                <div class="comms-signature">
+                    <p>PPMBR COMMAND CENTER - 2025</p>
+                    <p class="comms-coordinates">12.4532°N, 45.2341°E | EVERON SECTOR</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function copyPix() {
+            const pixKey = 'JAZIELRACING@GMAIL.COM';
+            navigator.clipboard.writeText(pixKey).then(() => {
+                const feedback = document.getElementById('copyFeedback');
+                feedback.style.display = 'block';
+                setTimeout(() => {
+                    feedback.style.display = 'none';
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>

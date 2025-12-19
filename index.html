@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPMBR - PROGRAMADO PARA MATAR | Arma Reforger Server</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Scanlines Effect Overlay -->
+    <div class="scanlines"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-grid"></div>
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="assets/hero-bg.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <div class="glitch-container">
+                <h1 class="hero-title" data-text="PPMBR">PPMBR</h1>
+            </div>
+            <h2 class="hero-subtitle">PROGRAMADO PARA MATAR</h2>
+            <p class="hero-tagline">A SIMULAÇÃO ACABOU. A GUERRA É REAL.</p>
+            <a href="https://discord.gg/RtVxPMcN8R" class="cta-button pulse" target="_blank">
+                <span class="cta-icon">▶</span> ALISTAMENTO (DISCORD)
+            </a>
+        </div>
+        <div class="hero-corners">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-tr"></div>
+            <div class="corner corner-bl"></div>
+            <div class="corner corner-br"></div>
+        </div>
+    </section>
+
+    <!-- Live Intel Bar -->
+    <section class="intel-bar">
+        <div class="intel-container">
+            <div class="intel-item">
+                <span class="intel-label">STATUS:</span>
+                <span class="intel-value online">ONLINE</span>
+            </div>
+            <div class="intel-separator"></div>
+            <div class="intel-item">
+                <span class="intel-label">JOGADORES:</span>
+                <span class="intel-value" id="playerCount">32/64</span>
+            </div>
+            <div class="intel-separator"></div>
+            <div class="intel-item">
+                <span class="intel-label">MAPA:</span>
+                <span class="intel-value">EVERON</span>
+            </div>
+            <div class="intel-separator"></div>
+            <div class="intel-item">
+                <span class="intel-label">PING:</span>
+                <span class="intel-value ping">15ms</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Briefing -->
+    <section class="mission-briefing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">[001]</span>
+                <h2 class="section-title">MISSION BRIEFING</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="briefing-content">
+                <div class="classified-stamp">CONFIDENCIAL</div>
+                <div class="briefing-text">
+                    <p class="briefing-main">
+                        <strong>PPMBR</strong> não é para iniciantes. Aqui, cada decisão importa.
+                        Cada tiro conta. Cada aliado é crucial.
+                    </p>
+                    <p>
+                        Nosso servidor de <strong>Arma Reforger</strong> oferece uma experiência
+                        PVP agressiva e realista focada em táticas de esquadrão, comunicação por
+                        rádio e combate intenso em Everon.
+                    </p>
+                    <p class="briefing-highlight">
+                        ► Prepare-se para morrer. Muitas vezes.<br>
+                        ► Aprenda com seus erros. Evolua com sua squad.<br>
+                        ► Domine o campo de batalha ou seja dominado.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arsenal (Features) -->
+    <section class="arsenal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">[002]</span>
+                <h2 class="section-title">ARSENAL</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="arsenal-grid">
+                <div class="arsenal-card">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">MODS EXCLUSIVOS</h3>
+                    <p class="card-description">
+                        Armamentos customizados, veículos balanceados e mecânicas
+                        de combate aprimoradas para máximo realismo.
+                    </p>
+                </div>
+
+                <div class="arsenal-card">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">ECONOMIA REALISTA</h3>
+                    <p class="card-description">
+                        Sistema de recursos limitados. Munição e suprimentos são preciosos.
+                        Gerencie ou morra tentando.
+                    </p>
+                </div>
+
+                <div class="arsenal-card">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">EVENTOS SEMANAIS</h3>
+                    <p class="card-description">
+                        Operações especiais, missões de alto risco e torneios PVP.
+                        Recompensas exclusivas para os melhores.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Comms) -->
+    <footer class="comms">
+        <div class="container">
+            <div class="comms-grid">
+                <div class="comms-links">
+                    <a href="regras.html" class="comms-link">[REGRAS]</a>
+                    <a href="doacao.html" class="comms-link">[DOAÇÃO]</a>
+                    <a href="suporte.html" class="comms-link">[SUPORTE]</a>
+                </div>
+                <div class="comms-signature">
+                    <p>PPMBR COMMAND CENTER - 2025</p>
+                    <p class="comms-coordinates">12.4532°N, 45.2341°E | EVERON SECTOR</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
