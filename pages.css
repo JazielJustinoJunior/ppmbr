@@ -903,4 +903,38 @@
     .faq-answer {
         gap: 10px;
     }
+   /* ===============================
+   SUPORTE – AJUSTE FINO DE TÍTULOS
+   =============================== */
+
+/* JUNTE-SE AO NOSSO DISCORD */
+.discord-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: none; /* remove o grito */
+}
+
+/* CANAIS DE SUPORTE / FAQ / LINKS ÚTEIS */
+.block-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: none;
+}
+
+/* Perguntas do FAQ */
+.faq-question h3 {
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: none;
+}
+
+/* LINKS ÚTEIS - cards */
+.quick-link-card h3 {
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: none;
+}
+
 }
