@@ -266,10 +266,12 @@
 }
 
 .infraction-card h3 {
-    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-family: 'Rajdhani', 'Arial', sans-serif;
+    font-weight: 500;
     font-size: 1.2rem;
+    color: var(--text-primary);
     margin-bottom: 10px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
 }
 
 .infraction-card p {
@@ -504,10 +506,12 @@
 }
 
 .step-content h3 {
-    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-family: 'Rajdhani', 'Arial', sans-serif;
+    font-weight: 500;
     font-size: 1.2rem;
-    margin-bottom: 10px;
     color: var(--text-primary);
+    margin-bottom: 10px;
+    letter-spacing: 0.08em;
 }
 
 .step-content p {
@@ -567,10 +571,12 @@
 }
 
 .benefit-card h3 {
-    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-family: 'Rajdhani', 'Arial', sans-serif;
+    font-weight: 500;
     font-size: 1.2rem;
     color: var(--text-primary);
     margin-bottom: 10px;
+    letter-spacing: 0.08em;
 }
 
 .benefit-card p {
@@ -691,11 +697,12 @@
 }
 
 .support-card h3 {
-    font-family: 'Impact', 'Arial Black', sans-serif;
-    font-size: 1.3rem;
+    font-family: 'Rajdhani', 'Arial', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
     color: var(--text-primary);
-    margin-bottom: 15px;
-    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 0.08em;
 }
 
 .support-card p {
@@ -823,10 +830,12 @@
 }
 
 .quick-link-card h3 {
-    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-family: 'Rajdhani', 'Arial', sans-serif;
+    font-weight: 500;
     font-size: 1.2rem;
     color: var(--text-primary);
     margin-bottom: 10px;
+    letter-spacing: 0.08em;
 }
 
 .quick-link-card p {
