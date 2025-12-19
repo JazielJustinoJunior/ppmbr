@@ -937,12 +937,14 @@
 
 /* IMPORTANTE – título de aviso, não hero */
 .contact-section .important-title {
+    all: unset;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 500;
-    font-size: 1.4rem;
-    letter-spacing: 0.05em;
-    color: #ffa726; /* mantém alerta, sem agressividade */
-    text-transform: none;
+    font-size: 1.6rem;
+    letter-spacing: 0.08em;
+    color: #ffa726;
+    display: block;
+    margin-bottom: 20px;
 }
 /* Alertas – texto forte sem agressividade */
 .alert-box strong {
