@@ -903,6 +903,8 @@
     .faq-answer {
         gap: 10px;
     }
+
+}
    /* ===============================
    SUPORTE – AJUSTE FINO DE TÍTULOS
    =============================== */
@@ -935,6 +937,4 @@
     font-weight: 500;
     letter-spacing: 0.05em;
     text-transform: none;
-}
-
 }
